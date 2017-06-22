@@ -1,0 +1,351 @@
+body, html {
+  height: 100%;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  line-height: 1.77;
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header  {
+  height: 50px;
+  margin: 0 auto;
+  font-size:15px;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  margin: 0;
+  float: right;
+  padding: 10px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+}
+
+.space {
+  height: 30px ;
+}
+
+.top {
+  height: 550px;
+  color: white;
+  font-size:20px;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+  background-image:url(482900810.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.top::before{
+	/* 透過した黒を重ねる */
+	background-color: rgba(0,0,0,0.5);
+	/* どの範囲に重ねるかを指定 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+.title {
+  font-size:23px;
+  font-weight: 500;
+  // border: 1px solid #aaa;
+   width: 800px;
+   height:280px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+   margin: auto;
+}
+
+.title1 {
+  font-size:55px;
+  font-weight: 700;
+}
+
+
+.introduction {
+  // background-color: green;
+  margin: auto;
+  width: 700px;
+  font-size:26px;
+  font-weight: 500;
+}
+
+
+.contents {
+  width : 900px ;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left-content {
+  height: 400px ;
+  width : calc(100% / 3) ;
+  float: left;
+}
+.middle-content {
+  height: 400px ;
+  width : calc(100% / 3) ;
+  float: left;
+}
+.right-content {
+  height: 400px ;
+  width : calc(100% / 3) ;
+  float: left;
+}
+
+.content-bun {
+  text-align: left;
+  margin: 0 auto;
+  font-size: 15px;
+  width: 200px;
+}
+
+.intro-image {
+  height: 200px;
+}
+
+.introduction2_soto {
+  background-color: #FF8000;
+  height: 350px;
+  position: relative;
+}
+
+.introduction2_uchi {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.introduction2 {
+  // background-color: green;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  height: 260px;
+  font-size:23px;
+  font-weight: 500;
+}
+
+.introduction2_soto:after {
+  border-top: 20px solid #FF8000;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  content: '';
+  margin-left: -10px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+}
+
+.oubo_title {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.oubo_sotowaku {
+  width: 900px;
+  margin: 0 auto;
+}
+
+
+.oubo_form {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px 10px 10px 100px;
+  text-align: left;
+  line-height: 350%;
+
+}
+.form-title {
+  font-size: 19px;
+}
+
+.birth_date_field {
+  select {
+    border: 1px solid #A4A4A4;
+    font-size: 14px;
+    height: 30px;
+    width: 74px;
+  }
+}
+
+select {
+  border: 1px solid #A4A4A4;
+  font-size: 14px;
+  background-color: white;
+  height: 30px;
+  width: 260px;
+}
+
+input {
+  padding-left: 5px;
+  font-size: 14px;
+  border: 1px solid #A4A4A4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+}
+
+.form_comment {
+  font-size: 16px;
+  textarea {
+    padding-left: 5px;
+    font-size: 13px;
+    margin-top: 20px;
+    border: 1px solid #A4A4A4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 150px;
+    width: 260px;
+  }
+}
+
+
+
+ul li {
+  list-style: none;
+    label {
+    margin-right: 10px;
+    width:200px;
+    float: left;
+    }
+}
+
+.form_chara {
+  label {
+    width: 100px;
+    line-height: 120%;
+  }
+}
+
+
+.form_c {
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form_setsumei {
+  letter-spacing: 0;
+  font-size: 14px;
+  padding: 10px 30px 10px 30px;
+  text-align: left;
+  color: gray;
+  line-height: 170%;
+}
+
+::-webkit-input-placeholder {
+  color: #D8D8D8;
+  font-size: 14px;
+  padding-left: 5px;
+}
+:-ms-input-placeholder {
+  color: #D8D8D8;
+  font-size: 14px;
+  padding-left: 5px;
+  }
+
+
+.button_area {
+  text-align: center;
+}
+
+.button {
+  font-size:20px;
+  margin: auto;
+	display: inline-block;
+	width: 200px;
+	height: 54px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+  border: 1px solid #15aeec;
+	background-color: #49c0f0;
+	background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+	background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+	border-radius: 5px;
+	color: #fff;
+	line-height: 50px;
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  letter-spacing: 3px;
+}
+.button::before,
+.button::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+.button,
+.button::before,
+.button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.button:hover {
+	border:1px solid #1090c3;
+	background-color: #1ab0ec;
+	background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
+	background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
+}
+.button:active {
+	background: #1a92c2;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	color: #1679a1;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+.footer{
+  background-color: #FF8000;
+  padding: 15px;
+  color: white;
+}
+
+.link_back {
+  color: white;
+}
