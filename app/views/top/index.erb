@@ -13,7 +13,7 @@
         <div class="title1">日本で働きたい！をサポート</div>
         日本で暮らす外国人の方のための就職支援サービスです。</br>
         応募フォームから必要事項を入力し、送信してください。</br>
-        お仕事の検索から、面接、就職までサポートします。</br>
+        お仕事の検索から、応募、面接までサポートします。</br>
       </br>
 
         <input class="button" type="button" onclick="location.href='#jump'"value="相談する">
@@ -65,129 +65,151 @@
 
   <div class="space">
   </div>
+
   <name="jump" id="jump"></a>
+
   <div class="introduction2_soto">
-      <div class="introduction2_uchi">
-        <div class="introduction2">
-          １．まずは下記フォームを入力し、送信してください</br>
-          ２．弊社から順番に電話にてご連絡いたします</br>
-          ３．基本的には直接お会いして、お話をお伺いさせて頂きます</br>
-          ４．希望条件などを確認しながら、一緒にお仕事を探しましょう</br>
-          ５．応募から面接、就職まで何でもサポートいたします！
+      <div class="introduction2">
+        １．まずは下記フォームを入力し、送信してください</br>
+        ２．弊社から順番に電話にてご連絡いたします</br>
+        ３．基本的には直接お会いして、お話をお伺いさせて頂きます</br>
+        ４．希望条件などを確認しながら、一緒にお仕事を探しましょう</br>
+        ５．応募から面接、就職まで必要なことをサポートいたします！
           <div class="oubo_title">
-            お気軽にご応募ください
+            お気軽にご応募ください！
           </div>
-        </div>
       </div>
     </div>
-  </div>
 
-
-
-  <div class="oubo_sotowaku">
-
-
-
-
-      <!-- <div class="form-title">
-        下の応募フォームを入力し、送信してください。</br>
-        サポートスタッフが順番にご連絡いたします。
-      </div> -->
-      <div class="oubo_form">
-        <div class="space">
-        </div>
-
-        <div>
-          <%= form_for @subscribe, url:top_index_path do |f| %>
-        </div>
-          <ul>
-            <li class="form_c">
+    <div class="oubo_form">
+        <%= form_for @subscribe, url:top_index_path do |f| %>
+        <table class="oubo_form_t">
+          <tr class="form_c">
+            <th>
               <%= f.label :name, 'お名前：' %>
+            </th>
+            <td>
               <%= f.text_field :name, placeholder:"名前を入力してください" %>
-            </li>
+            </td>
+          </tr>
 
-            <li class="form_c">
-              <label>性別：</label>
-              <div class="form_chara clearfix">
-                <label>
-                <%= f.radio_button :sex, 1 %>男性
-                </label>
-                <label>
+          <tr class="form_c">
+            <th><label>性別：</label></th>
+            <td>
+              <label class="radio_sex">
+                <%= f.radio_button :sex, 1   %>男性
+              </label>
+              <label class="radio_sex">
                 <%= f.radio_button :sex, 2 %>女性
-                </label>
-              </div>
-            </li>
-            <div class="form_c">
-            <li class="birth_date_field">
-            <%= f.label :birth_date,'生年月日：' %>
-            <%= f.date_select(
-                    :birth_date,
-                    use_month_numbers: true,
-                    start_year:     1930,
-                    end_year:       (Time.now.year - 10),
-                    default:        Date.new(1989, 1, 1),
-                    date_separator: '/') %>
-            </li>
+              </label>
+            </td>
+          </tr>
+
+          <div class="form_c">
+            <tr class="birth_date_field">
+              <th>
+                <%= f.label :birth_date,'生年月日：' %>
+              </th>
+              <td>
+                <%= f.date_select(
+                :birth_date,
+                use_month_numbers: true,
+                start_year:     1930,
+                end_year:       (Time.now.year - 10),
+                default:        Date.new(1989, 1, 1),
+                date_separator: '/') %>
+              </td>
+            </tr>
           </div>
-            <li class="form_c">
-              <%= f.label :telephone, '電話番号：' %>
-              <%= f.telephone_field :telephone, size: 15, maxlength: 20, placeholder:"電話番号を入力してください" %>
-            </li>
 
-            <li class="form_c">
-              <%= f.label :email, 'メールアドレス：' %>
-              <%= f.email_field :email, size: 25, maxlength: 30, placeholder:"メールアドレスを入力してください" %>
-            </li>
+            <tr class="form_c">
+              <th>
+                <%= f.label :telephone, '電話番号：' %>
+              </th>
+              <td>
+                <%= f.telephone_field :telephone, size: 15, maxlength: 20, placeholder:"電話番号を入力してください" %>
+              </td>
+            </tr>
 
-            <li class="form_c">
-            <%= f.label :address, 'お住いのエリア：' %>
-            <%= f.select :address, [["東京都", "東京都"], ["埼玉県", "埼玉県"], ["千葉県", "千葉県"], ["神奈川県", "神奈川県"], ["その他", "その他"]] , :include_blank => true %>
-            </li>
+            <tr class="form_c">
+              <th>
+                <%= f.label :email, 'メールアドレス：' %>
+              </th>
+              <td>
+                <%= f.email_field :email, size: 25, maxlength: 30, placeholder:"メールアドレスを入力してください" %>
+              </td>
+            </tr>
 
-            <li class="form_c">
-            <%= f.label :job, '現在の職業：' %>
-            <%= f.select :job, [["留学生", "留学生"], ["ワーキングホリデー", "ワーキングホリデー"], ["フリーター", "フリーター"], ["主婦・主夫", "主婦・主夫"], ["社員", "社員"], ["無職", "無職"], ["その他", "その他"]] , :include_blank => true %>
-            </li>
+            <tr class="form_c">
+              <th>
+                <%= f.label :address, 'お住いのエリア：' %>
+              </th>
+              <td>
+                <%= f.select :address, [["東京都", "東京都"], ["埼玉県", "埼玉県"], ["千葉県", "千葉県"], ["神奈川県", "神奈川県"], ["その他", "その他"]] , :include_blank => true %>
+              </td>
+            </tr>
 
-            <li class="form_c">
-              <%= f.label :nationality, '国籍：' %>
-              <%= f.text_field :nationality, placeholder:"国籍を入力してください" %>
-            </li>
+            <tr class="form_c">
+              <th>
+                <%= f.label :job, '現在の職業：' %>
+              </th>
+              <td>
+                <%= f.select :job, [["留学生", "留学生"], ["ワーキングホリデー", "ワーキングホリデー"], ["フリーター", "フリーター"], ["主婦・主夫", "主婦・主夫"], ["社員", "社員"], ["無職", "無職"], ["その他", "その他"]] , :include_blank => true %>
+              </td>
+            </tr>
 
-            <li class="form_c">
-            <%= f.label :lang_level, '日本語の能力：' %>
-            <%= f.select :lang_level, [["初学者", "初学者"], ["初級", "初級"], ["中級", "中級"], ["上級", "上級"]] , :include_blank => true %>
-            </br>
-            <div class="form_setsumei">
-            初学者：ほとんど喋れない</br>
-            初級：カタコトレベル、簡単な会話ができる</br>
-            中級：日常会話レベル、日常生活で単語を組み合わせて会話が出来る</br>
-            上級：ビジネスレベル、日本人と同等に、流暢に会話が出来る</br>
-            </div>
-            </li>
-            <li class="form_comment">
-              <%= f.label :comment, '自己紹介・希望条件など：' %>
-              <%= f.text_area :comment, cols:"40", rows:"8", placeholder:"自己紹介・希望の条件などを入力してください" %>
-            </li>
-            <div class="space">
-            </div>
+            <tr class="form_c">
+              <th>
+                <%= f.label :nationality, '国籍：' %>
+              </th>
+              <td>
+                <%= f.text_field :nationality, placeholder:"国籍を入力してください" %>
+              </td>
+            </tr>
+
+            <tr class="form_c">
+              <th>
+                <%= f.label :lang_level, '日本語の能力：' %>
+              </th>
+              <td>
+                <%= f.select :lang_level, [["初学者", "初学者"], ["初級", "初級"], ["中級", "中級"], ["上級", "上級"]] , :include_blank => true %>
+              </td></br>
+            </tr>
+            <tr class="form_setsumei">
+              <th colspan="2">
+                初学者：ほとんど喋れない</br>
+                初級：カタコトレベル、簡単な会話ができる</br>
+                中級：日常会話レベル、日常生活で単語を組み合わせて会話が出来る</br>
+                上級：ビジネスレベル、日本人と同等に、流暢に会話が出来る</br></br>
+              </th>
+            </tr>
+
+            <tr class="form_comment">
+              <th>
+                <%= f.label :comment, '自己紹介・希望条件など：' %>
+              </th>
+              <td>
+                <%= f.text_area :comment, cols:"40", rows:"8", placeholder:"自己紹介・希望の条件などを入力してください" %>
+              </td>
+            </tr>
+          </table>
+          <div class="space">
           </div>
-            <div class="button_area">
-              <!-- <%= f.submit '送信する', class: "button"%> -->
-              <input type="button" value="送信する" class="button" onClick="submit()" >
-            </div>
+          <div class="button_area">
+            <!-- <%= f.submit '送信する', class: "button"%> -->
+            <input type="button" value="送信する" class="button" onClick="submit()" >
+          </div>
 
-          <% end %>
-    </div>
+        <% end %>
+      </div>
+      <div class="space">
+      </div>
+      <div class="space">
+      </div>
+      <div class="space">
+      </div>
 
-    <div class="space">
-    </div>
-    <div class="space">
-    </div>
-    <div class="space">
-    </div>
-
-  <footer>
-    <div class="footer">Copyright(C) 〜〜〜〜〜 RESERVED.</div>
-  </footer>
-</body>
+      <footer>
+        <div class="footer">Copyright(C) 〜〜〜〜〜 RESERVED.</div>
+      </footer>
+    </body>
