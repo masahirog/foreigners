@@ -92,7 +92,7 @@ header  {
   // background-color: green;
   margin: auto;
   width: 800px;
-  font-size:26px;
+  font-size:20px;
   font-weight: 500;
 }
 
@@ -137,6 +137,12 @@ header  {
   position: relative;
 }
 
+.introduction2_soto ol {
+  font-weight: bold;
+}
+.lic {
+  font-weight: normal;
+}
 
 .introduction2 {
   margin: auto;
@@ -431,10 +437,10 @@ footer {
           text-align: center;
           // background-color: green;
           margin: auto;
-          padding-left: 20px;
-          font-size:16px;
+          padding: 5px;
+          font-size:13px;
           font-weight: 500;
-          width: auto;
+          width: 280px;
         }
 
 
@@ -490,12 +496,19 @@ footer {
         }
 
         .introduction2 {
-          width: 300px;
+          padding-right: 10px;
+          width: 270px;
           margin: auto;
           color: white;
           height: 260px;
           font-size:16px;
           font-weight: 400;
+        }
+        .introduction2_soto ol {
+          font-weight: bold;
+        }
+        .lic {
+          font-weight: normal;
         }
 
         .introduction2_soto:after {
@@ -512,7 +525,7 @@ footer {
         .introduction2-1 {
           padding-top: 5px;
           text-align: center;
-          font-weight: 600;
+          font-weight: 700;
           font-size: 20px;
         }
 
@@ -541,7 +554,7 @@ footer {
           text-align: left;
           display: block;
           // background-color: red;
-          width: 100%;
+          width: 90%;
         }
 
         table.oubo_form_t td label.radio_sex input{
