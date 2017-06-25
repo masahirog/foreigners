@@ -160,7 +160,7 @@ header  {
   left: 50%;
 }
 
-.oubo_title {
+.introduction2-1 {
   padding-top: 10px;
   text-align: center;
   font-weight: 800;
@@ -252,10 +252,6 @@ select {
 
 
 .form_c {
-}
-
-.form-title {
-  text-align: center;
 }
 
 .form_setsumei {
@@ -384,11 +380,11 @@ footer {
 
 
         .space {
-          height: 20px ;
+          height: 10px ;
         }
 
         .top {
-          height: 350px;
+          height: 280px;
           color: white;
           font-size:20px;
           font-weight: 600;
@@ -414,9 +410,9 @@ footer {
 
         .title {
           // background-color: green;
-          font-size:18px;
+          font-size:12px;
           font-weight: 500;
-          height:220px;
+          height:150px;
           top: 0;
           bottom: 0;
           left: 0;
@@ -426,8 +422,8 @@ footer {
         }
 
         .title1 {
-          font-size:26px;
-          font-weight: 700;
+          font-size:23px;
+          font-weight: 500;
         }
 
 
@@ -436,7 +432,7 @@ footer {
           // background-color: green;
           margin: auto;
           padding-left: 20px;
-          font-size:20px;
+          font-size:16px;
           font-weight: 500;
           width: auto;
         }
@@ -477,7 +473,7 @@ footer {
         .content-bun {
           text-align: left;
           margin: 0 auto;
-          font-size: 20px;
+          font-size: 16px;
           height: auto;
           width: auto;
         }
@@ -487,25 +483,19 @@ footer {
         }
 
         .introduction2_soto {
+          padding-top: 15px;
           background-color: #FF8000;
-          height: 250px;
+          height: 350px;
           position: relative;
         }
 
-        .introduction2_uchi {
-          margin: 0 auto;
-        }
-
         .introduction2 {
-          width: auto;
-          position: absolute;
-          top: 0;
-          bottom: 0;
+          width: 300px;
           margin: auto;
           color: white;
           height: 260px;
-          font-size:17px;
-          font-weight: 500;
+          font-size:16px;
+          font-weight: 400;
         }
 
         .introduction2_soto:after {
@@ -519,11 +509,11 @@ footer {
           left: 50%;
         }
 
-        .oubo_title {
-          padding-top: 10px;
+        .introduction2-1 {
+          padding-top: 5px;
           text-align: center;
-          font-weight: 800;
-          font-size: 30px;
+          font-weight: 600;
+          font-size: 20px;
         }
 
         .oubo_form {
@@ -538,11 +528,17 @@ footer {
           margin: auto;
         }
 
+        table.oubo_form_t th {
+          margin-top: 15px;
+          font-size: 20px;
+          line-height: 1.5;
+        }
+
 
         table.oubo_form_t th,
         table.oubo_form_t td {
-          padding: 0;
-          text-align: center;
+          padding: 0 0 0 15px ;
+          text-align: left;
           display: block;
           // background-color: red;
           width: 100%;
@@ -553,10 +549,6 @@ footer {
         }
         table.oubo_form_t td label.radio_sex {
           font-size: 20px;
-        }
-
-        .form-title {
-          font-size: 17px;
         }
 
         .birth_date_field {
@@ -605,15 +597,12 @@ footer {
         .form_c {
         }
 
-        .form-title {
-          text-align: center;
-        }
-
         table.oubo_form_t tr.form_setsumei th  {
           width: auto;
           letter-spacing: 0;
-          font-size: 16px;
-          text-align: center;
+          font-size: 14px;
+          text-align: left;
+          padding: 0 30px 0 30px;
         }
 
         ::-webkit-input-placeholder {
@@ -633,11 +622,11 @@ footer {
         }
 
         .button {
-          font-size:20px;
+          font-size:16px;
           margin: auto;
         	display: inline-block;
-        	width: 200px;
-        	height: 54px;
+        	width: 170px;
+        	height: 44px;
         	text-align: center;
         	text-decoration: none;
         	outline: none;
@@ -647,7 +636,7 @@ footer {
         	background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
         	border-radius: 5px;
         	color: #fff;
-        	line-height: 50px;
+        	line-height: 20px;
         	-webkit-transition: none;
         	transition: none;
         	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
@@ -688,8 +677,9 @@ footer {
           margin: 0 auto;
         }
         .footer{
+          font-size: 13px;
           background-color: #FF8000;
-          padding: 15px;
+          padding: 5px;
           color: white;
         }
 
