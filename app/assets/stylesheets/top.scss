@@ -51,7 +51,7 @@ header  {
   font-weight: 600;
   margin: 0 auto;
   text-align: center;
-  background-image:url(483834311.jpg);
+  background-image:url(top_photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 25%;
@@ -60,7 +60,7 @@ header  {
 
 .top::before{
 	/* 透過した黒を重ねる */
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.3);
 	/* どの範囲に重ねるかを指定 */
 	position: absolute;
 	top: 0;
