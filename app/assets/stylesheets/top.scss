@@ -103,6 +103,7 @@ header  {
         right: 0;
         position: absolute;
         margin: auto;
+        padding: 0 20px 0 20px;
       }
 
       .title1 {
@@ -129,16 +130,16 @@ header  {
   @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
     .introduction_soto {
       margin: 0px 10px 0px 10px;
-      background-color: #FBFBEF;
-      padding: 20px;
+      // background-color: red;
     }
     .introduction {
-      text-align: center;
-      // background-color: green;
-      margin: auto;
-      font-size:13px;
+      padding: 20px 10px 20px 10px;
+      width:260px;
+      background-color: green;
+      text-align: left;
+      font-size:14px;
       font-weight: 500;
-      width: 280px;
+      // width: 280px;
     }
   }
 
@@ -186,7 +187,7 @@ header  {
       .contents_soto {
         background-color: #FBFBEF;
         margin: 0px 10px 0px 10px;
-        padding: 20px;
+        padding: 10px 0 10px 0;
       }
       .contents {
         margin: 0 auto;
@@ -196,7 +197,6 @@ header  {
       }
 
       .left-content {
-        padding-top: 10px;
         margin: 0 auto;
         float: none;
         height: auto;
@@ -204,7 +204,6 @@ header  {
 
       }
       .middle-content {
-        padding-top: 10px;
         margin: 0 auto;
         float: none;
         height: auto;
@@ -212,7 +211,6 @@ header  {
 
       }
       .right-content {
-        padding-top: 10px;
         margin: 0 auto;
         float: none;
         height: auto;
@@ -223,13 +221,13 @@ header  {
       .content-bun {
         text-align: left;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 13px;
         height: auto;
-        width: auto;
+        width: 250px;
       }
 
       .intro-image {
-        height: 300px;
+        height: 250px;
       }
     }
 
@@ -280,15 +278,15 @@ header  {
         margin: 0 10px 0 10px;
         padding-top: 15px;
         background-color: #FBFBEF;
-        height: 350px;
+        height: 260px;
         position: relative;
       }
 
       .introduction2 {
         padding-right: 10px;
-        width: 270px;
+        width: 230px;
         margin: auto;
-        font-size:16px;
+        font-size:13px;
         font-weight: 400;
       }
       .introduction2_soto ol {
@@ -313,7 +311,7 @@ header  {
         padding-top: 5px;
         text-align: center;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 15px;
       }
     }
 
@@ -492,7 +490,7 @@ select {
       .oubo_form {
         width: auto;
         // background-color: green;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
         margin: auto;
       }
@@ -503,7 +501,7 @@ select {
 
       table.oubo_form_t th {
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 1.5;
       }
 
@@ -521,7 +519,7 @@ select {
         width: 50px;
       }
       table.oubo_form_t td label.radio_sex {
-        font-size: 20px;
+        font-size: 14px;
       }
 
       .birth_date_field {
@@ -553,7 +551,7 @@ select {
       }
 
       .form_comment {
-        font-size: 16px;
+        font-size: 14px;
         textarea {
           padding-left: 5px;
           font-size: 13px;
@@ -595,7 +593,7 @@ select {
       }
 
       .button {
-        font-size:16px;
+        font-size:14px;
         margin: auto;
         display: inline-block;
         width: 170px;
