@@ -6,7 +6,7 @@ body, html {
 h1, h2, h3, h4, h5, h6, p, body {
   line-height: 1.77;
   font-size: 18px;
-  color: #4a4a4a;
+  color: black;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -17,17 +17,6 @@ header  {
   margin: 0 auto;
   font-size:15px;
 }
-// header ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
-//
-// header ul li {
-//   margin: 0;
-//   float: right;
-//   padding: 10px;
-// }
 
 .clearfix:after {
   content: "";
@@ -35,21 +24,21 @@ header  {
   display: block;
 }
 
-// .menu {
-//   position: absolute;
-//   right: 0;
-// }
-
 .space {
   height: 30px ;
 }
+    @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+        .space {
+          height: 10px ;
+        }
+      }
 
 .top {
   height: 550px;
   color: white;
   font-size:20px;
   font-weight: 600;
-  margin: 0 auto;
+  margin: 20px 20px 0px 20px;
   text-align: center;
   background-image:url(top_photo.jpg);
   background-size: cover;
@@ -88,12 +77,75 @@ header  {
 }
 
 
+    @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+      .top {
+        margin: 10px 10px 0px 10px;
+        height: 280px;
+        color: white;
+        font-size:20px;
+        font-weight: 600;
+        text-align: center;
+        background-image:url(top_photo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 25%;
+        position: relative;
+      }
+
+      .title {
+        // background-color: green;
+        font-size:12px;
+        font-weight: 500;
+        height:150px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+      }
+
+      .title1 {
+        font-size:23px;
+        font-weight: 500;
+      }
+    }
+
+
+.introduction_soto {
+  margin: 0px 20px 0px 20px;
+  background-color: #FBFBEF;
+}
+
 .introduction {
   // background-color: green;
+  padding: 50px;
   margin: auto;
   width: 800px;
   font-size:20px;
   font-weight: 500;
+}
+
+  @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+    .introduction_soto {
+      margin: 0px 10px 0px 10px;
+      background-color: #FBFBEF;
+      padding: 20px;
+    }
+    .introduction {
+      text-align: center;
+      // background-color: green;
+      margin: auto;
+      font-size:13px;
+      font-weight: 500;
+      width: 280px;
+    }
+  }
+
+.contents_soto {
+  background-color: #FBFBEF;
+  margin: 0px 20px 0px 20px;
+  padding: 50px;
 }
 
 
@@ -130,9 +182,61 @@ header  {
   height: 220px;
 }
 
+    @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+      .contents_soto {
+        background-color: #FBFBEF;
+        margin: 0px 10px 0px 10px;
+        padding: 20px;
+      }
+      .contents {
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        // background-color: red;
+      }
+
+      .left-content {
+        padding-top: 10px;
+        margin: 0 auto;
+        float: none;
+        height: auto;
+        width: 300px;
+
+      }
+      .middle-content {
+        padding-top: 10px;
+        margin: 0 auto;
+        float: none;
+        height: auto;
+        width: 300px;
+
+      }
+      .right-content {
+        padding-top: 10px;
+        margin: 0 auto;
+        float: none;
+        height: auto;
+        width: 300px;
+
+      }
+
+      .content-bun {
+        text-align: left;
+        margin: 0 auto;
+        font-size: 16px;
+        height: auto;
+        width: auto;
+      }
+
+      .intro-image {
+        height: 300px;
+      }
+    }
+
+
 .introduction2_soto {
   padding-top: 40px;
-  background-color: #FF8000;
+  background-color: #FBFBEF;
   height: 310px;
   position: relative;
 }
@@ -147,8 +251,6 @@ header  {
 .introduction2 {
   margin: auto;
   width: 680px;
-  // background-color: green;
-  color: white;
   height: 260px;
   font-size:23px;
   font-weight: 500;
@@ -156,7 +258,7 @@ header  {
 
 //↓矢印のコード
 .introduction2_soto:after {
-  border-top: 20px solid #FF8000;
+  border-top: 20px solid #FBFBEF;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   content: '';
@@ -173,15 +275,60 @@ header  {
   font-size: 30px;
 }
 
+    @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+      .introduction2_soto {
+        margin: 0 10px 0 10px;
+        padding-top: 15px;
+        background-color: #FBFBEF;
+        height: 350px;
+        position: relative;
+      }
+
+      .introduction2 {
+        padding-right: 10px;
+        width: 270px;
+        margin: auto;
+        font-size:16px;
+        font-weight: 400;
+      }
+      .introduction2_soto ol {
+        font-weight: bold;
+      }
+      .lic {
+        font-weight: normal;
+      }
+
+      .introduction2_soto:after {
+        border-top: 20px solid #FBFBEF;
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        content: '';
+        margin-left: -10px;
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+      }
+
+      .introduction2-1 {
+        padding-top: 5px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+
+.oubo_form_soto {
+  background-color: #FBFBEF;
+  margin: 40px 20px 20px 20px;
+  padding: 0px 0px 50px 0px;
+}
 
 .oubo_form {
-  // background-color: green;
   width: 800px;
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
   line-height: 350%;
-
 }
 
 table.oubo_form_t th {
@@ -335,16 +482,176 @@ select {
 	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
 }
 
+    @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
+      .oubo_form_soto {
+        background-color: #FBFBEF;
+        margin: 40px 10px 10px 10px;
+        padding: 0px 0px 30px 0px;
+      }
+
+      .oubo_form {
+        width: auto;
+        // background-color: green;
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+      }
+
+      table {
+        margin: auto;
+      }
+
+      table.oubo_form_t th {
+        margin-top: 15px;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+
+      table.oubo_form_t th,
+      table.oubo_form_t td {
+        padding: 0 0 0 15px ;
+        text-align: left;
+        display: block;
+        // background-color: red;
+        width: 90%;
+      }
+
+      table.oubo_form_t td label.radio_sex input{
+        width: 50px;
+      }
+      table.oubo_form_t td label.radio_sex {
+        font-size: 20px;
+      }
+
+      .birth_date_field {
+        select {
+          border: 1px solid #A4A4A4;
+          font-size: 14px;
+          height: 30px;
+          width: calc(85% / 3);
+        }
+      }
+
+      select {
+        border: 1px solid #A4A4A4;
+        font-size: 14px;
+        background-color: white;
+        height: 30px;
+        width: 90%;
+      }
+
+      input {
+        padding-left: 5px;
+        font-size: 14px;
+        border: 1px solid #A4A4A4;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        width: 90%;
+        height: 30px;
+      }
+
+      .form_comment {
+        font-size: 16px;
+        textarea {
+          padding-left: 5px;
+          font-size: 13px;
+          margin-top: 20px;
+          border: 1px solid #A4A4A4;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          height: 150px;
+          width: 90%;
+        }
+      }
+
+      .form_c {
+      }
+
+      table.oubo_form_t tr.form_setsumei th  {
+        width: auto;
+        letter-spacing: 0;
+        font-size: 14px;
+        text-align: left;
+        padding: 0 30px 0 30px;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #D8D8D8;
+        font-size: 14px;
+        padding-left: 5px;
+      }
+      :-ms-input-placeholder {
+        color: #D8D8D8;
+        font-size: 14px;
+        padding-left: 5px;
+        }
+
+
+      .button_area {
+        text-align: center;
+      }
+
+      .button {
+        font-size:16px;
+        margin: auto;
+        display: inline-block;
+        width: 170px;
+        height: 44px;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: 1px solid #15aeec;
+        background-color: #49c0f0;
+        background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+        background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+        border-radius: 5px;
+        color: #fff;
+        line-height: 20px;
+        -webkit-transition: none;
+        transition: none;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        letter-spacing: 3px;
+      }
+      .button::before,
+      .button::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+      }
+      .button,
+      .button::before,
+      .button::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+      }
+      .button:hover {
+        border:1px solid #1090c3;
+        background-color: #1ab0ec;
+        background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
+        background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
+      }
+      .button:active {
+        background: #1a92c2;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+        color: #1679a1;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+      }
+    }
+
 
 footer {
   text-align: center;
   margin: 0 auto;
 }
 .footer{
-  background-color: #FF8000;
   padding: 15px;
-  color: white;
-
 }
 
 .link_back {
@@ -352,352 +659,9 @@ footer {
 }
 
 
-
-
-
-
       @media (max-width: 768px) { // (　)の中で、cssを適用させるブラウザの幅を指定
-        body, html {
-          height: 100%;
-          background-color: white;
-        }
-
-        h1, h2, h3, h4, h5, h6, p, body {
-          line-height: 1.77;
-          font-size: 16px;
-          color: #4a4a4a;
-          font-family: sans-serif;
-          margin: 0;
-          padding: 0;
-        }
-
-        header  {
-          height: 50px;
-          margin: 0 auto;
-          font-size:16px;
-        }
-
-        .clearfix:after {
-          content: "";
-          clear: both;
-          display: block;
-        }
-
-
-
-        .space {
-          height: 10px ;
-        }
-
-        .top {
-          height: 280px;
-          color: white;
-          font-size:20px;
-          font-weight: 600;
-          margin: 0 auto;
-          text-align: center;
-          background-image:url(483834311.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: 0 25%;
-          position: relative;
-        }
-        .top::before{
-        	/* 透過した黒を重ねる */
-        	background-color: rgba(0,0,0,0.5);
-        	/* どの範囲に重ねるかを指定 */
-        	position: absolute;
-        	top: 0;
-        	right: 0;
-        	bottom: 0;
-        	left: 0;
-        	content: ' ';
-        }
-
-        .title {
-          // background-color: green;
-          font-size:12px;
-          font-weight: 500;
-          height:150px;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          position: absolute;
-          margin: auto;
-        }
-
-        .title1 {
-          font-size:23px;
-          font-weight: 500;
-        }
-
-
-        .introduction {
-          text-align: center;
-          // background-color: green;
-          margin: auto;
-          padding: 5px;
-          font-size:13px;
-          font-weight: 500;
-          width: 280px;
-        }
-
-
-        .contents {
-          margin: 0 auto;
-          text-align: center;
-          width: auto;
-          // background-color: red;
-        }
-
-        .left-content {
-          padding-top: 10px;
-          margin: 0 auto;
-          float: none;
-          height: auto;
-          width: 300px;
-
-        }
-        .middle-content {
-          padding-top: 10px;
-          margin: 0 auto;
-          float: none;
-          height: auto;
-          width: 300px;
-
-        }
-        .right-content {
-          padding-top: 10px;
-          margin: 0 auto;
-          float: none;
-          height: auto;
-          width: 300px;
-
-        }
-
-        .content-bun {
-          text-align: left;
-          margin: 0 auto;
-          font-size: 16px;
-          height: auto;
-          width: auto;
-        }
-
-        .intro-image {
-          height: 300px;
-        }
-
-        .introduction2_soto {
-          padding-top: 15px;
-          background-color: #FF8000;
-          height: 350px;
-          position: relative;
-        }
-
-        .introduction2 {
-          padding-right: 10px;
-          width: 270px;
-          margin: auto;
-          color: white;
-          height: 260px;
-          font-size:16px;
-          font-weight: 400;
-        }
-        .introduction2_soto ol {
-          font-weight: bold;
-        }
-        .lic {
-          font-weight: normal;
-        }
-
-        .introduction2_soto:after {
-          border-top: 20px solid #FF8000;
-          border-right: 20px solid transparent;
-          border-left: 20px solid transparent;
-          content: '';
-          margin-left: -10px;
-          position: absolute;
-          bottom: -18px;
-          left: 50%;
-        }
-
-        .introduction2-1 {
-          padding-top: 5px;
-          text-align: center;
-          font-weight: 700;
-          font-size: 20px;
-        }
-
-        .oubo_form {
-          width: auto;
-          // background-color: green;
-          font-size: 15px;
-          text-align: center;
-          margin: auto;
-        }
-
-        table {
-          margin: auto;
-        }
-
-        table.oubo_form_t th {
-          margin-top: 15px;
-          font-size: 20px;
-          line-height: 1.5;
-        }
-
-
-        table.oubo_form_t th,
-        table.oubo_form_t td {
-          padding: 0 0 0 15px ;
-          text-align: left;
-          display: block;
-          // background-color: red;
-          width: 90%;
-        }
-
-        table.oubo_form_t td label.radio_sex input{
-          width: 50px;
-        }
-        table.oubo_form_t td label.radio_sex {
-          font-size: 20px;
-        }
-
-        .birth_date_field {
-          select {
-            border: 1px solid #A4A4A4;
-            font-size: 14px;
-            height: 30px;
-            width: calc(85% / 3);
-          }
-        }
-
-        select {
-          border: 1px solid #A4A4A4;
-          font-size: 14px;
-          background-color: white;
-          height: 30px;
-          width: 90%;
-        }
-
-        input {
-          padding-left: 5px;
-          font-size: 14px;
-          border: 1px solid #A4A4A4;
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-          width: 90%;
-          height: 30px;
-        }
-
-        .form_comment {
-          font-size: 16px;
-          textarea {
-            padding-left: 5px;
-            font-size: 13px;
-            margin-top: 20px;
-            border: 1px solid #A4A4A4;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            height: 150px;
-            width: 90%;
-          }
-        }
-
-        .form_c {
-        }
-
-        table.oubo_form_t tr.form_setsumei th  {
-          width: auto;
-          letter-spacing: 0;
-          font-size: 14px;
-          text-align: left;
-          padding: 0 30px 0 30px;
-        }
-
-        ::-webkit-input-placeholder {
-          color: #D8D8D8;
-          font-size: 14px;
-          padding-left: 5px;
-        }
-        :-ms-input-placeholder {
-          color: #D8D8D8;
-          font-size: 14px;
-          padding-left: 5px;
-          }
-
-
-        .button_area {
-          text-align: center;
-        }
-
-        .button {
-          font-size:16px;
-          margin: auto;
-        	display: inline-block;
-        	width: 170px;
-        	height: 44px;
-        	text-align: center;
-        	text-decoration: none;
-        	outline: none;
-          border: 1px solid #15aeec;
-        	background-color: #49c0f0;
-        	background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
-        	background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
-        	border-radius: 5px;
-        	color: #fff;
-        	line-height: 20px;
-        	-webkit-transition: none;
-        	transition: none;
-        	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-          letter-spacing: 3px;
-        }
-        .button::before,
-        .button::after {
-        	position: absolute;
-        	z-index: -1;
-        	display: block;
-        	content: '';
-        }
-        .button,
-        .button::before,
-        .button::after {
-        	-webkit-box-sizing: border-box;
-        	-moz-box-sizing: border-box;
-        	box-sizing: border-box;
-        	-webkit-transition: all .3s;
-        	transition: all .3s;
-        }
-        .button:hover {
-        	border:1px solid #1090c3;
-        	background-color: #1ab0ec;
-        	background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
-        	background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
-        }
-        .button:active {
-        	background: #1a92c2;
-        	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
-        	color: #1679a1;
-        	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
-        }
-
-
-        footer {
-          text-align: center;
-          margin: 0 auto;
-        }
         .footer{
           font-size: 13px;
-          background-color: #FF8000;
           padding: 5px;
-          color: white;
         }
-
-        .link_back {
-          color: white;
-        }
-
       }
