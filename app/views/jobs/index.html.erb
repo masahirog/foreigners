@@ -1,0 +1,15 @@
+<body>
+
+  <% @jobs.each do |job| %>
+
+    <%= link_to "#{job.title}", "#{job.url}" %></br>
+     <%= job.appeal %></br>
+     <%= job.pay %></br>
+     <%= job.erea %></br>
+     <%= job.station %></br>
+     <%= image_tag "#{job.image}", width: 200, height: 150 %></br>
+     <%= job.subtitle %></br>
+     ----------------------------------------------------------------------------------</br>
+  <% end %>
+
+</body>

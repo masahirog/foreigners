@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170619160008) do
+ActiveRecord::Schema.define(version: 20170717080650) do
+
+  create_table "jobs", force: :cascade do |t|
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "content",    limit: 65535
+    t.text     "title",      limit: 65535
+    t.text     "url",        limit: 65535
+    t.text     "subtitle",   limit: 65535
+    t.text     "pay",        limit: 65535
+    t.text     "erea",       limit: 65535
+    t.text     "job_id",     limit: 65535
+    t.text     "station",    limit: 65535
+    t.text     "image",      limit: 65535
+    t.text     "appeal",     limit: 65535
+  end
 
   create_table "subscribes", force: :cascade do |t|
     t.string   "name",        limit: 255

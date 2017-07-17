@@ -52,6 +52,8 @@ end
   gem 'twitter-bootstrap-rails'
   gem 'bootstrap-material-design', '0.1.4'
   gem 'bootstrap_form'
+  gem 'nokogiri'
+  gem 'open_uri_redirections'
 
 group :production do
   gem 'rails_12factor'
